@@ -30,6 +30,7 @@ public class ConnectAndJoinRandom : Photon.MonoBehaviour
 
             ConnectInUpdate = false;
             PhotonNetwork.ConnectUsingSettings(Version + "." + SceneManagerHelper.ActiveSceneBuildIndex);
+            Debug.Log("gecko655."+Version + "." + SceneManagerHelper.ActiveSceneBuildIndex);
         }
     }
 
@@ -63,7 +64,7 @@ public class ConnectAndJoinRandom : Photon.MonoBehaviour
         Debug.LogError("Cause: " + cause);
     }
 
-    public void OnJoinedRoom()
+    public virtual void OnJoinedRoom()
     {
         Debug.Log("OnJoinedRoom() called by PUN. Now this client is in a room. From here on, your game would be running. For reference, all callbacks are listed in enum: PhotonNetworkingMessage");
     }
