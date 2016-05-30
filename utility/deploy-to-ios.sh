@@ -1,4 +1,4 @@
-PROJECT_UTILITY_DIR=`pwd`/`dirname $BASH_SOURCE`
+PROJECT_UTILITY_DIR=`pwd`/`dirname $BASH_SOURCE` # <= must be absolute path
 PROJECT_BASE=`dirname $PROJECT_UTILITY_DIR`
 APP_NAME=photon-practice.app
 

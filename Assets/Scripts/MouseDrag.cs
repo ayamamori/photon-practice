@@ -21,7 +21,7 @@ public class MouseDrag : MonoBehaviour
 
 		rBody.isKinematic = false;
 	}
-		
+
 	void OnMouseDrag()
 	{
 		if (!pView.isMine) return;

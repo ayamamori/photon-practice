@@ -13,9 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HostType: 2
   Protocol: 0
-  ServerAddress: 104.197.113.112
+  ServerAddress: 114.514.1919.810
   ServerPort: 5055
-  AppID: 
+  AppID: gecko655
   PreferredRegion: 0
   EnabledRegions: -1
   JoinLobby: 0
