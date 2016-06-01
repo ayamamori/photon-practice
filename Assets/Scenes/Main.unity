@@ -440,6 +440,8 @@ GameObject:
   - 23: {fileID: 1910862329}
   - 65: {fileID: 1910862326}
   - 54: {fileID: 1910862327}
+  - 114: {fileID: 1910862328}
+  - 114: {fileID: 1910862330}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -474,6 +476,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1910862328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1910862325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd0697e992634a04bd9d86aa9625dc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &1910862329
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -500,6 +513,31 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &1910862330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1910862325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  prefixBackup: -1
+  observed: {fileID: 0}
+  synchronization: 0
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 0}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 1
+  instantiationId: 1
+  isRuntimeInstantiated: 0
 --- !u!33 &1910862331
 MeshFilter:
   m_ObjectHideFlags: 0
