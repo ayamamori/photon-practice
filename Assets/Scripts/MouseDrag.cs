@@ -4,6 +4,7 @@ public class MouseDrag : MonoBehaviour
 {
 	private PhotonView pView;
 	private Rigidbody rBody;
+	private int i=0;
 
 	void Awake(){
 		pView = GetComponent<PhotonView> ();
@@ -15,6 +16,10 @@ public class MouseDrag : MonoBehaviour
 		if (!pView.isMine) return;
 
 		rBody.isKinematic = true;
+
+		Room room = PhotonNetwork.room;
+		room.SetCustomProperties (new ExitGames.Client.Photon.Hashtable{{"a", i++}});
+
 	}
 	void OnMouseUp(){
 		if (!pView.isMine) return;
